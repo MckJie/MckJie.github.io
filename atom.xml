@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-10-31T11:34:41.388Z</updated>
+  <updated>2021-10-31T11:58:33.184Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>html后续的学习</title>
+    <link href="http://example.com/2021/10/31/html%E5%90%8E%E7%BB%AD%E7%9A%84%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://example.com/2021/10/31/html%E5%90%8E%E7%BB%AD%E7%9A%84%E5%AD%A6%E4%B9%A0/</id>
+    <published>2021-10-31T11:40:11.000Z</published>
+    <updated>2021-10-31T11:58:33.184Z</updated>
+    
+    <content type="html"><![CDATA[<p>在上次学了些基础后我又进行了后面的一些学习分别是HTML的元素，属性，标题以及段落。于是我首先于此记录下元素知识。<br>一：元素<br>首先HTML 文档由 HTML 元素定义。<br>因此元素有以下几种：<br><img src="https://i.loli.net/2021/10/31/nYL57NoAOPHqpwr.png" alt="元素.png"><br>然后则是HTML元素的语法：<br>1：HTML 元素以开始标签起始<br>2：HTML 元素以结束标签终止<br>3：元素的内容是开始标签与结束标签之间的内容<br>4：某些 HTML 元素具有空内容（empty content）<br>5：空元素在开始标签中进行关闭（以开始标签的结束而结束）<br>6：大多数 HTML 元素可拥有属性<br>同时大多数 HTML 元素可以嵌套（HTML 元素可以包含其他 HTML 元素）。<br>HTML 文档由相互嵌套的 HTML 元素构成。<br>下面有几个例子：<br>一：<br><img src="https://i.loli.net/2021/10/31/sEDztgFbIBSkeV7.png" alt="段落.png"><br>这个 p 元素定义了 HTML 文档中的一个段落。<br>这个元素拥有一个开始标签 p 以及一个结束标签 /p.<br>元素内容是: 这是第一个段落。<br>二：<br>body<br>p这是第一个段落。/p<br>/body<br>&lt;&gt;自行加上去。。<br>body&gt;元素定义了 HTML 文档的主体。<br>这个元素拥有一个开始标签 body 以及一个结束标签 /body。<br>元素内容是另一个 HTML 元素（p 元素）。<br>三：<br>html<br>body<br>p&gt;这是第一个段落。/p<br>/body<br>/html<br>自行加&lt;&gt;<br>html&gt;元素定义了整个 HTML 文档。<br>这个元素拥有一个开始标签 html ，以及一个结束标签 /html.<br>元素内容是另一个 HTML 元素（body 元素）。<br>HTML 空元素<br>没有内容的 HTML 元素被称为空元素。空元素是在开始标签中关闭的。<br><br> 就是没有关闭标签的空元素（<br> 标签定义换行）。<br>在 XHTML、XML 以及未来版本的 HTML 中，所有元素都必须被关闭。<br>在开始标签中添加斜杠，比如 <br />，是关闭空元素的正确方法，HTML、XHTML 和 XML 都接受这种方式。<br>即使 <br> 在所有浏览器中都是有效的，但使用 <br /> 其实是更长远的保障。<br>最后来个小提示：小写比大写更好用哦。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;在上次学了些基础后我又进行了后面的一些学习分别是HTML的元素，属性，标题以及段落。于是我首先于此记录下元素知识。&lt;br&gt;一：元素&lt;br&gt;首先HTML 文档由 HTML 元素定义。&lt;br&gt;因此元素有以下几种：&lt;br&gt;&lt;img src=&quot;https://i.loli.net/</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>HTML基础</title>
@@ -56,7 +76,7 @@
     <published>2021-10-23T11:37:54.192Z</published>
     <updated>2021-10-23T12:04:50.827Z</updated>
     
-    <content type="html"><![CDATA[<hr><p>title: 关于hexo的几个常见错误<br>date: 2021-10-23 19:37:54<br>tags:<br>​—<br>对于传博客，我们总是能与hexo的各种错误杠上。因此我今天于此总结一下hexo命令的几个错误已经解决方法。<br>1：当我们输入hexo d的时候出现：fatal: Authentication failed for ‘<a href="https://github.com/xxx/xxx.github.io.git">https://github.com/xxx/xxx.github.io.git</a>       /‘<br>1：git的密码输入错误（本质），当然在知道用户名密码的情况下都输错的低级错误那就不说了。<br>2：git的密码修改后而未及时修改为新的密码，导致出错。<br>3：git的账户被锁定<br>对此我们有以下几种解决方法：首先可以输入git config –list<br>（user.name=yuhua<br>user.email=<a href="mailto:&#120;&#x78;&#120;&#64;&#120;&#120;&#x78;&#x2e;&#x63;&#111;&#x6d;">&#120;&#x78;&#120;&#64;&#120;&#120;&#x78;&#x2e;&#x63;&#111;&#x6d;</a>）此为需要对照的信息。<br>如果不对的话就需要重新配置。<br>git config –global user.name [username]  如：git config –global user.name yh<br>git config –global user.email [email]         如：git config –global user.email <a href="mailto:&#49;&#x31;&#x31;&#64;&#49;&#54;&#51;&#x2e;&#99;&#x6f;&#109;">&#49;&#x31;&#x31;&#64;&#49;&#54;&#51;&#x2e;&#99;&#x6f;&#109;</a><br>如果是第二条的问题，我们则需要我们需要做如下操作（idea工具下操作）<br>1：在file-&gt;Settings-&gt;Passwords下在Do not save,forget passwords after restart前打勾。<br>2：在控制面板的凭据管理器中找到windows凭据，将git的密码修改成已经改过的新密码（操作完后保险起见可以重启一下机器）。<br>如果是第三条原因则需另请高明。。。。<br>2：atal: unable to access ‘<a href="https://github.com/a956551943/a956551943.github.io/&#39;">https://github.com/a956551943/a956551943.github.io/&#39;</a>: Encountered end of file<br>FATAL {<br>  err: Error: Spawn failed<br>      at ChildProcess.<anonymous> (/usr/local/src/hexo/hanyubolg/node_modules/hexo-util/lib/spawn.js:51:21)<br>      at ChildProcess.emit (events.js:376:20)<br>      at Process.ChildProcess._handle.onexit (internal/child_process.js:277:12) {<br>    code: 128<br>  }<br>} Something’s wrong. Maybe you can find the solution here: %s <a href="https://hexo.io/docs/troubleshooting.html">https://hexo.io/docs/troubleshooting.html</a><br>如果出线以上问题，则有以下几种方法：<br>1：可能是网络问题，这边建议换成手机热点不要使用校园网络。<br>2：删除.deploy_git文件夹;<br>输入git config –global core.autocrlf false<br>然后，依次执行：<br>hexo clean<br>hexo g<br>hexo d<br>3：有可能是你的git repo配置地址不正确,可以将http方式变更为ssh方式<br>##进入站点根目录<br>cd /usr/local/src/hexo/hanyubolg/<br>##删除git提交内容文件夹<br>vim _config.yml<br>##修改<br>deploy:<br>type: git<br>repo: <a href="https://github.com/yourname/yourname.github.io.git">https://github.com/yourname/yourname.github.io.git</a> -&gt; <a href="mailto:&#103;&#x69;&#116;&#64;&#103;&#x69;&#116;&#x68;&#117;&#x62;&#x2e;&#99;&#x6f;&#109;">&#103;&#x69;&#116;&#64;&#103;&#x69;&#116;&#x68;&#117;&#x62;&#x2e;&#99;&#x6f;&#109;</a>:a956551943/weixiaohui.github.io.git<br>branch: master<br>##最后<br>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d<br>4：强烈不推荐<br>##进入站点根目录<br>cd /usr/local/src/hexo/hanyubolg/<br>##进入depoly文件夹<br>cd .deploy_git/<br>##强制推送<br>git push -f<br>本次分享到此结束。</p>]]></content>
+    <content type="html"><![CDATA[<hr><p>title: 关于hexo的几个常见错误<br>date: 2021-10-23 19:37:54<br>tags:<br>​—<br>对于传博客，我们总是能与hexo的各种错误杠上。因此我今天于此总结一下hexo命令的几个错误已经解决方法。<br>1：当我们输入hexo d的时候出现：fatal: Authentication failed for ‘<a href="https://github.com/xxx/xxx.github.io.git">https://github.com/xxx/xxx.github.io.git</a>       /‘<br>1：git的密码输入错误（本质），当然在知道用户名密码的情况下都输错的低级错误那就不说了。<br>2：git的密码修改后而未及时修改为新的密码，导致出错。<br>3：git的账户被锁定<br>对此我们有以下几种解决方法：首先可以输入git config –list<br>（user.name=yuhua<br>user.email=<a href="mailto:&#x78;&#120;&#120;&#64;&#x78;&#x78;&#120;&#46;&#99;&#111;&#x6d;">&#x78;&#120;&#120;&#64;&#x78;&#x78;&#120;&#46;&#99;&#111;&#x6d;</a>）此为需要对照的信息。<br>如果不对的话就需要重新配置。<br>git config –global user.name [username]  如：git config –global user.name yh<br>git config –global user.email [email]         如：git config –global user.email <a href="mailto:&#x31;&#49;&#49;&#x40;&#x31;&#54;&#x33;&#46;&#x63;&#x6f;&#x6d;">&#x31;&#49;&#49;&#x40;&#x31;&#54;&#x33;&#46;&#x63;&#x6f;&#x6d;</a><br>如果是第二条的问题，我们则需要我们需要做如下操作（idea工具下操作）<br>1：在file-&gt;Settings-&gt;Passwords下在Do not save,forget passwords after restart前打勾。<br>2：在控制面板的凭据管理器中找到windows凭据，将git的密码修改成已经改过的新密码（操作完后保险起见可以重启一下机器）。<br>如果是第三条原因则需另请高明。。。。<br>2：atal: unable to access ‘<a href="https://github.com/a956551943/a956551943.github.io/&#39;">https://github.com/a956551943/a956551943.github.io/&#39;</a>: Encountered end of file<br>FATAL {<br>  err: Error: Spawn failed<br>      at ChildProcess.<anonymous> (/usr/local/src/hexo/hanyubolg/node_modules/hexo-util/lib/spawn.js:51:21)<br>      at ChildProcess.emit (events.js:376:20)<br>      at Process.ChildProcess._handle.onexit (internal/child_process.js:277:12) {<br>    code: 128<br>  }<br>} Something’s wrong. Maybe you can find the solution here: %s <a href="https://hexo.io/docs/troubleshooting.html">https://hexo.io/docs/troubleshooting.html</a><br>如果出线以上问题，则有以下几种方法：<br>1：可能是网络问题，这边建议换成手机热点不要使用校园网络。<br>2：删除.deploy_git文件夹;<br>输入git config –global core.autocrlf false<br>然后，依次执行：<br>hexo clean<br>hexo g<br>hexo d<br>3：有可能是你的git repo配置地址不正确,可以将http方式变更为ssh方式<br>##进入站点根目录<br>cd /usr/local/src/hexo/hanyubolg/<br>##删除git提交内容文件夹<br>vim _config.yml<br>##修改<br>deploy:<br>type: git<br>repo: <a href="https://github.com/yourname/yourname.github.io.git">https://github.com/yourname/yourname.github.io.git</a> -&gt; <a href="mailto:&#103;&#x69;&#x74;&#64;&#x67;&#x69;&#x74;&#104;&#117;&#98;&#46;&#x63;&#111;&#109;">&#103;&#x69;&#x74;&#64;&#x67;&#x69;&#x74;&#104;&#117;&#98;&#46;&#x63;&#111;&#109;</a>:a956551943/weixiaohui.github.io.git<br>branch: master<br>##最后<br>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d<br>4：强烈不推荐<br>##进入站点根目录<br>cd /usr/local/src/hexo/hanyubolg/<br>##进入depoly文件夹<br>cd .deploy_git/<br>##强制推送<br>git push -f<br>本次分享到此结束。</p>]]></content>
     
     
       
